@@ -37,7 +37,7 @@
 								that want to predict who will be their next client based on the data they collected. </br>
 								I wanted to show which age range of people that will most likely be interested in using this company's insurance,
 								but due to the limitation of tools and my lack of experience, I can only show how good decision tree model is for this case
-								and how many customer they will get based on the test set that they got (unlabeled dataset ).
+								and how many customer they will get based on the test set that they got (unlabeled dataset).
 							</p>
 							<h2>Case</h3>
 							<p>
@@ -47,7 +47,7 @@
 							<span><a href="images/Train.png"><img src="images/Train.png" alt=""  style="filter: brightness(85%); width: 70%; margin-left: auto; margin-right: auto; display: block;"/></a></span>
 							<p style="text-align: center;">Insurance Dataset</p>
 							<p>
-								We can see that I only use 5 support attribute that I think has the highest impact on the label.
+								We can see that I only use 5 support attributes that I assume has the highest impact on the label.
 							</p>
 							<span><a href="images/process.png"><img src="images/process.png" alt=""  style="filter: brightness(85%); width: 70%; margin-left: auto; margin-right: auto; display: block;"/></a></span>
 							<p style="text-align: center;">RapidMiner Process</p>
@@ -72,9 +72,9 @@
 
 							<p>
 								After putting the data into our model, we get the result above. The result tells us that our model has 87,75% accuracy of prediction. Even though this is a pretty high number,
-								we can see the imbalance of the ROC curve where our hope that the AUC (red line) will get closer to 1. Judging by the curve, we can see that this model
+								we can see the imbalance of the ROC curve where our hope that the total of AUC (Area Under Curve) will get closer to 1. Judging by the curve, we can see that this model
 								is not really good at predicting the true responses. This might be caused by the disproportion of the data that we used for the model training
-								where the false response significantly outnumbering the true response with the ratio of 9:1.
+								where the false response significantly outnumbered the true response with the ratio of 9:1.
 							</p>
 							<p>
 								In the end, we learn that the disproportion of the train data can cause the prediction to become slightly inaccurate. However, we could prevent This
